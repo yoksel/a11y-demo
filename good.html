@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин яблок</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header
+      id="top"
+      class="page-header"
+      aria-label="Шапка сайта">
+      <h1 class="title page-header__title">Магазин яблок</h1>
+
+      <nav
+        class="page-nav page-header__nav"
+        aria-label="Страницы сайта">
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link"
+              href="./bad.html"
+            >Плохой пример</a>
+          </li>
+
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link"
+            >Хороший пример</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-content">
+      <main>
+        <p>Воображаемый магазин яблок. Демо-страница для тестирования работы скринридеров.</p>
+
+        <p>Разметка этой страницы хорошо доступна для чтения скринридером.</p>
+
+        <section class="section">
+          <h2
+            class="title section__title"
+            id="what"
+          >Что можно приготовить из яблок?</h2>
+
+          <div class="examples">
+            <ul class="list">
+              <li class="item">Пироги: шарлотку, штрудель, тарт</li>
+              <li class="item">Варенье</li>
+              <li class="item">Компоты</li>
+              <li class="item">Мармелад</li>
+              <li class="item">Съесть прямо так!</li>
+            </ul>
+
+            <div class="examples__img-wrapper">
+              <img
+                class="img examples__img"
+                src="img/jacek-dylag-imEqHThoix8-unsplash.jpg"
+                alt="Яблочный компот"
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2
+            class="title section__title"
+            id="recipes"
+          >Рецепты</h2>
+
+          <div class="recipes">
+            <article class="recipe">
+              <h3 class="title recipe__title">Шарлотка</h3>
+
+              <h4 class="recipe__list-title">Ингредиенты</h4>
+
+              <ol class="list ingredients">
+                <li class="item">
+                  Яблоки
+                  <span class="ingredients__quantity">1 кг</span>
+                </li>
+                <li class="item">
+                  Сахар
+                  <span class="ingredients__quantity">1 стакан</span>
+                </li>
+                <li class="item">
+                  Мука
+                  <span class="ingredients__quantity">1 стакан</span>
+                </li>
+                <li class="item">
+                  Яйца
+                  <span class="ingredients__quantity">3 шт</span>
+                </li>
+                <li class="item">
+                  Молотая корица
+                  <span class="ingredients__quantity">по вкусу</span>
+                </li>
+              </ol>
+
+              <h4 class="recipe__list-title">Процесс</h4>
+
+              <ol class="list list--numeric">
+                <li class="item">Яблоки нарезать на кусочки размером <nobr>3-4см</nobr></li>
+                <li class="item">Форму для пирога смазать маслом</li>
+                <li class="item">Яблоки перемешать с корицей и выложить в форму</li>
+                <li class="item">Взбить яйца с сахаром</li>
+                <li class="item">Во взбитые яйца всыпать муку и размешать до однородности</li>
+                <li class="item">Залить тестом яблоки в форме</li>
+                <li class="item">Выпекать 30-40 минут при температуре 180&deg;</li>
+              </ol>
+            </article>
+
+            <article class="recipe">
+              <h3 class="title recipe__title">Компот</h3>
+
+              <h4 class="recipe__list-title">Ингредиенты</h4>
+
+              <ol class="list ingredients">
+                <li class="item">
+                  Яблоки
+                  <span class="ingredients__quantity">1 кг</span>
+                </li>
+                <li class="item">
+                  Сахар
+                  <span class="ingredients__quantity">1/2 стакана</span>
+                </li>
+                <li class="item">
+                  Вода
+                  <span class="ingredients__quantity">3 литра</span>
+                </li>
+              </ol>
+
+              <h4 class="recipe__list-title">Процесс</h4>
+
+              <ol class="list list--numeric">
+                <li class="item">Яблоки нарезать крупными дольками</li>
+                <li class="item">В кипящую воду высыпать сахар и яблоки</li>
+                <li class="item">Варить 10 минут</li>
+                <li class="item">Остудить</li>
+              </ol>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2
+            class="title section__title"
+            id="order"
+          >Заказать яблоки</h2>
+
+          <form
+            class="form"
+            action="https://echo.htmlacademy.ru/">
+            <fieldset class="form__group">
+              <legend class="form__group-title">Сорт</legend>
+
+              <ol class="form__list">
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="checkbox"
+                      name="type"
+                      value="Антоновка"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--checkbox
+                    ">
+                      Антоновка (кислые)
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="checkbox"
+                      name="type"
+                      value="Гренни Смит"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--checkbox
+                    ">
+                      Гренни Смит (кисло-сладкие)
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="checkbox"
+                      name="type"
+                      value="Голден"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--checkbox
+                    ">
+                      Голден (сладкие)
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="checkbox"
+                      name="type"
+                      value="Ред Делишес"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--checkbox
+                    ">
+                      Ред Делишес (сладкие)
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="checkbox"
+                      name="type"
+                      value="Гала"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--checkbox
+                    ">
+                      Гала (сладкие)
+                    </span>
+                  </label>
+                </li>
+              </ol>
+            </fieldset>
+
+            <fieldset class="form__group">
+              <legend class="form__group-title">Вес одной упаковки</legend>
+
+              <ol class="form__list">
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="radio"
+                      name="weight"
+                      value="1кг"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--radio
+                    ">
+                      1кг
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="radio"
+                      name="weight"
+                      value="2кг"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--radio
+                    ">
+                      2кг
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="radio"
+                      name="weight"
+                      value="5кг"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--radio
+                    ">
+                      5кг
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="radio"
+                      name="weight"
+                      value="10кг"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--radio
+                    ">
+                      10кг
+                    </span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input
+                      type="radio"
+                      name="weight"
+                      value="Грузовичок"
+                      class="form__input visually-hidden"
+                    >
+
+                    <span
+                      class="
+                        form__label-text
+                        form__label-text--radio
+                    ">
+                      Грузовичок
+                    </span>
+                  </label>
+                </li>
+              </ol>
+            </fieldset>
+
+            <div class="form__group form__group--wide">
+              <label
+                class="form__group-title"
+                for="comment">
+                Комментарий к заказу
+              </label>
+
+                <textarea
+                  id="comment"
+                  name="comment"
+                  placeholder="Уточните свои предпочтения"
+                  class="form__textarea"
+                ></textarea>
+            </div>
+
+            <div class="form__footer">
+              <button class="form__submit">Заказать</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <aside class="page-aside">
+        <div class="page-aside__content">
+          <div
+            class="widget"
+          >
+            <h2 class="title widget__title">На странице</h2>
+
+            <ul class="inner-nav">
+              <li class="item">
+                <a href="#what">Что можно приготовить из яблок?</a>
+                </li>
+              <li class="item">
+                <a href="#recipes">Рецепты</a>
+                </li>
+              <li class="item">
+                <a href="#order">Заказать яблоки</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h2 class="title widget__title">Ссылки</h2>
+
+            <ul class="list">
+              <li class="item">
+                <a href="https://help.apple.com/voiceover/info/guide/10.12/?lang=ru#/">Справочник по VoiceOver</a>
+              </li>
+              <li class="item">
+                <a href="https://weblind.ru/">Веблайнд</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h2 class="title widget__title">Фото</h2>
+
+            <ul class="list">
+              <li class="item">
+                <a href="https://unsplash.com/photos/wXuzS9xR49M">Matheus
+                  Cenali</a>
+              </li>
+              <li class="item">
+                <a href="https://unsplash.com/photos/imEqHThoix8">Jacek
+                  Dylag</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="page-footer">
+      <nav
+        class="page-nav page-footer__nav"
+        aria-label="Страницы сайта">
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a
+              class="
+                page-nav__link
+                page-nav__link--has-icon
+                page-nav__link--top
+              "
+              href="#top"
+            >
+              <span class="visually-hidden">Наверх</span>
+            </a>
+          </li>
+
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link"
+              href="./bad.html"
+            >Плохой пример</a>
+          </li>
+
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link"
+            >Хороший пример</a>
+          </li>
+
+          <li class="page-nav__item">
+            <a
+              class="
+                page-nav__link
+                page-nav__link--has-icon
+                page-nav__link--github
+              "
+              href="https://github.com/yoksel/a11y-demo"
+              aria-label="Проект на гитхабе"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A11y демо</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body body--intro">
+  <div class="page">
+    <header
+      class="page-header"
+      aria-label="Шапка сайта">
+      <h1 class="title page-header__title">A11y демо</h1>
+    </header>
+
+    <main>
+      <p>
+        Демо содержит две страницы. Одна использует HTML-теги по назначению, и её содержимое хорошо читается скринридерами.
+        Вторая намеренно свёрстана плохо: в ней используется минимальное количество тегов, не используются теги заголовков и
+        не сделано многое другое. Это пример очень плохого кода, хотя такой код можно встретить в реальных проектах. Вторая
+        страница плохо доступна для скринридеров.
+      </p>
+
+      <p>
+        Cтраницы выглядят совершенно одинаково, разница будет только при чтении скринридером.
+      </p>
+
+      <p>
+        Назначение демо — сделать удобным сравнение доступной и недоступной страниц и показать, что самая базовая доступность
+        не требует особых усилий — достаточно использовать теги по назначению.
+      </p>
+
+      <div class="demo-links">
+        <a
+          class="demo-links__link demo-links__link--bad"
+          href="./bad.html">Плохой пример</a>
+        <a
+          class="demo-links__link demo-links__link--good"
+          href="./good.html">Хороший пример</a>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>
