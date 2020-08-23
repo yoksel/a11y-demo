@@ -16,7 +16,11 @@ BODY {
 }
 
 .body--intro {
-  padding-bottom: var(--gap);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--gap) / 2) 0;
+  box-sizing: border-box;
 }
 
 A {
@@ -121,14 +125,14 @@ P:first-child {
   align-items: flex-end;
   justify-content: center;
   margin: 0 -2vw;
-  padding-top: 15vw;
+  padding-top: 12vw;
   background: crimson url(img/matheus-cenali-wXuzS9xR49M-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0%;
   border-radius: 0 0 2vw 2vw;
   text-transform: uppercase;
-  font-size: 11.75vw;
+  font-size: 9vw;
   line-height: .5;
   text-shadow:
     0 0 15px rgba(0,0,0,.5),
@@ -138,6 +142,7 @@ P:first-child {
 }
 
 .body--intro .page-header__title {
+  padding-top: 2vw;
   background: transparent;
   text-shadow: none;
   overflow: visible;
