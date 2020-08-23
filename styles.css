@@ -80,13 +80,6 @@ P:first-child {
   max-width: 100%;
 }
 
-.img--right {
-  float: right;
-  max-width: 250px;
-  max-height: calc(100% - 20px);
-  margin-left: 2rem;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -227,6 +220,7 @@ P:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -353,7 +347,7 @@ P:first-child {
   gap: var(--gap);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .examples {
     grid-template-columns: 1fr;
     gap: calc(var(--gap) / 2);
@@ -443,6 +437,7 @@ P:first-child {
 }
 
 .ingredients {
+  max-width: 350px;
   padding-inline-start: 1em;
 }
 
@@ -480,7 +475,7 @@ P:first-child {
   gap: 2rem;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 680px) {
   .form {
     grid-template-columns: 1fr;
   }
@@ -513,6 +508,7 @@ P:first-child {
 }
 
 .form__submit {
+  display: inline-block;
   padding: .5em 1em;
   border: 0;
   background: linear-gradient(crimson, orangered);
@@ -524,7 +520,7 @@ P:first-child {
   color: #FFF;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 680px) {
   .form__group--wide,
   .form__footer {
     grid-column: span 1;
@@ -550,15 +546,17 @@ P:first-child {
 .form__label-text {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .form__label-text::before {
   content: '';
   display: block;
+  flex-shrink: 0;
   width: 1em;
   height: 1em;
   margin-right: .5em;
+  margin-top: .2em;
   border: 1px solid #DDD;
   border-radius: var(--radius);
   background-position: center center;
@@ -572,12 +570,11 @@ P:first-child {
 .form__input:not(.visually-hidden) {
   position: absolute;
   z-index: 2;
-  top: 0;
-  bottom: 0;
+  top: .2em;
   left: .25em;
   opacity: 0;
   width: 1em;
-  height: 1em;
+  height: 1.5em;
   margin: auto;
 }
 
