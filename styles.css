@@ -310,8 +310,8 @@ P:first-child {
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 0rem;
-  right: 0rem;
+  left: 0;
+  right: 0;
   bottom: 0;
   max-width: 280px;
   opacity: .5;
@@ -329,8 +329,9 @@ P:first-child {
   background-repeat: repeat;
   background-position: calc(50% + var(--bg-size) * 0.75) calc(50% + var(--bg-size) * 0.75);
   background-blend-mode: multiply;
-  transform: rotate(5deg);
+  transform: rotate(2.5deg);
   right: -1.5rem;
+  left: -.5rem;
 }
 .section__title::after {
   right: -2rem;
@@ -395,8 +396,8 @@ P:first-child {
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 0rem;
-  right: 0rem;
+  left: 0;
+  right: 0;
   bottom: 0;
   opacity: .5;
   border-radius: var(--radius);
@@ -414,7 +415,7 @@ P:first-child {
   background-position: calc(50% + var(--bg-size) * 0.75) calc(50% + var(--bg-size) * 0.75);
   background-blend-mode: multiply;
   transform: rotate(4deg);
-  right: -1.75rem;
+  right: -1.5rem;
 }
 
 .recipe__title::after {
