@@ -306,6 +306,7 @@ P:first-child {
 .section__title {
   position: relative;
   z-index: 0;
+  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 1.25em;
   padding: .25em .75em;
@@ -390,6 +391,7 @@ P:first-child {
 
 .recipe__title {
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 0;
   margin-bottom: 1.5em;
@@ -438,6 +440,7 @@ P:first-child {
 
   margin-block-start: 2.5em;
   margin-block-end: .75em;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
   background: linear-gradient(to top,
