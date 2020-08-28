@@ -290,7 +290,7 @@ P:first-child {
 .widget__title {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .widget .list:last-child {
