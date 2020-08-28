@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <div class="page">
@@ -113,7 +114,7 @@
               <h4 class="recipe__list-title">Процесс</h4>
 
               <ol class="list list--numeric">
-                <li class="item">Яблоки нарезать на кусочки размером <nobr>3-4см</nobr></li>
+                <li class="item">Яблоки нарезать на кусочки размером <span class="nowrap">3-4см</span></li>
                 <li class="item">Форму для пирога смазать маслом</li>
                 <li class="item">Яблоки перемешать с корицей и выложить в форму</li>
                 <li class="item">Взбить яйца с сахаром</li>
@@ -159,13 +160,17 @@
           <h2
             class="title section__title"
             id="order"
-          >Заказать яблоки</h2>
+          >
+            Заказать яблоки
+          </h2>
 
           <form
             class="form"
             action="https://echo.htmlacademy.ru/">
             <fieldset class="form__group">
-              <legend class="form__group-title">Сорт</legend>
+              <legend class="form__group-title">
+                Сорт
+              </legend>
 
               <ol class="form__list">
                 <li class="form__item">
@@ -262,7 +267,9 @@
             </fieldset>
 
             <fieldset class="form__group">
-              <legend class="form__group-title">Вес одной упаковки</legend>
+              <legend class="form__group-title">
+                Вес одной упаковки
+              </legend>
 
               <ol class="form__list">
                 <li class="form__item">
@@ -356,6 +363,153 @@
                   </label>
                 </li>
               </ol>
+            </fieldset>
+
+            <fieldset class="form__group form__group--wide">
+              <legend class="form__group-title">
+                Сумка для фруктов
+              </legend>
+
+              <label
+                class="
+                  form__label
+                  form__label--toggler
+                "
+              >
+                <input
+                  type="checkbox"
+                  name="add-bag"
+                  value="no"
+                  class="
+                    form__input
+                    form__input--add-bag
+                    visually-hidden
+                  "
+                  checked
+                >
+
+                <span class="
+                    form__label-text
+                    form__label-text--toggler
+                ">
+                  Добавить в заказ?
+                </span>
+              </label>
+
+              <fieldset
+                class="
+                  form__group
+                  form__group--wide
+                  form__group--colors
+                "
+              >
+                <legend class="form__group-title">
+                  Выберите цвет
+                </legend>
+
+                <ol class="form__list form__list--colors">
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input
+                        type="radio"
+                        name="color"
+                        value="color-1"
+                        class="form__input visually-hidden"
+                      >
+
+                      <span
+                        class="
+                          form__label-text
+                          form__label-text--color
+                        "
+                        style="background-color: crimson;"
+                      >
+                        <span class="visually-hidden">Красный</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input
+                        type="radio"
+                        name="color"
+                        value="color-2"
+                        class="form__input visually-hidden"
+                      >
+
+                      <span
+                        class="
+                          form__label-text
+                          form__label-text--color
+                        "
+                        style="background-color: orange;"
+                      >
+                        <span class="visually-hidden">Оранжевый</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input
+                        type="radio"
+                        name="color"
+                        value="color-3"
+                        class="form__input visually-hidden"
+                      >
+
+                      <span
+                        class="
+                          form__label-text
+                          form__label-text--color
+                        "
+                        style="background-color: gold;"
+                      >
+                        <span class="visually-hidden">Жёлтый</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input
+                        type="radio"
+                        name="color"
+                        value="color-4"
+                        class="form__input visually-hidden"
+                      >
+
+                      <span
+                        class="
+                          form__label-text
+                          form__label-text--color
+                        "
+                        style="background-color: yellowgreen;"
+                      >
+                        <span class="visually-hidden">Зеленый</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input
+                        type="radio"
+                        name="color"
+                        value="color-5"
+                        class="form__input visually-hidden"
+                      >
+
+                      <span
+                        class="
+                          form__label-text
+                          form__label-text--color
+                        "
+                        style="background-color: steelblue;"
+                      >
+                        <span class="visually-hidden">Синий</span>
+                      </span>
+                    </label>
+                  </li>
+                </ol>
+              </fieldset>
             </fieldset>
 
             <div class="form__group form__group--wide">

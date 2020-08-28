@@ -50,6 +50,10 @@ P:first-child {
   background: #FFF;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .title {
   font-family: 'Neucha', cursive;
   font-weight: bold;
@@ -65,6 +69,10 @@ P:first-child {
 
 .list--numeric {
   list-style-type: decimal;
+}
+
+.form__list--colors {
+  display: flex;
 }
 
 .item {
@@ -492,6 +500,11 @@ P:first-child {
   grid-column: span 2;
 }
 
+.form__group:disabled,
+.form__group--disabled {
+  opacity: .5;
+}
+
 .form__list {
   margin-block-start: 1rem;
   margin-block-end: 1rem;
@@ -502,6 +515,12 @@ P:first-child {
 .form__item + .form__item {
   margin-top: .5em;
 }
+
+.form__list--colors .form__item + .form__item {
+  margin-top: 0;
+  margin-left: .5em;
+}
+
 
 .form__footer {
   grid-column: span 2;
@@ -550,7 +569,14 @@ P:first-child {
   align-items: flex-start;
 }
 
+.form__label--toggler {
+  max-width: 50%;
+  margin: 1rem 1rem 2.5rem;
+}
+
 .form__label-text::before {
+  --border-color: #DDD;
+
   content: '';
   display: block;
   flex-shrink: 0;
@@ -558,7 +584,7 @@ P:first-child {
   height: 1em;
   margin-right: .5em;
   margin-top: .2em;
-  border: 1px solid #DDD;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius);
   background-position: center center;
   background-repeat: no-repeat;
@@ -566,6 +592,43 @@ P:first-child {
 
 .form__label-text--radio::before {
   border-radius: 50%;
+}
+
+.form__label-text--color {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.form__label-text--color::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-color: transparent;
+}
+
+.form__label-text--toggler {
+  align-items: center;
+}
+
+.form__label-text--toggler::before {
+  width: 3em;
+  height: 1.5em;
+  border-radius: .75em;
+  background-color: #CCC;
+  background-image: radial-gradient(circle, white 70%, transparent 0);
+  background-size: 1.25em 1.25em;
+  background-position: .1em 50%;
+  border-color: transparent;
+  transition: background-position .15s;
+  cursor: pointer;
 }
 
 .form__input:not(.visually-hidden) {
@@ -584,8 +647,9 @@ P:first-child {
 }
 
 .form__input:focus + .form__label-text::before {
-  border-color: orangered;
-  box-shadow: 0 0 0 2px orangered;
+  --border-color: currentColor;
+  border-color: var(--border-color);
+  box-shadow: 0 0 0 2px var(--border-color);
 }
 
 .form__input:checked + .form__label-text--checkbox::before {
@@ -595,6 +659,23 @@ P:first-child {
 
 .form__input:checked + .form__label-text--radio::before {
   background-image: radial-gradient(#333 45%, transparent 0);
+}
+
+.form__input:checked + .form__label-text--color::before {
+  --border-color: currentColor;
+  border-color: var(--border-color);
+  box-shadow: 0 0 0 2px var(--border-color);
+}
+
+.form__input:checked + .form__label-text--toggler::before {
+  background-position: calc(100% - .1em) 50%;
+  background-color: yellowgreen;
+}
+
+.form__group:disabled .form__label-text--color::before,
+.form__group--disabled .form__label-text--color::before {
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .form__textarea {
