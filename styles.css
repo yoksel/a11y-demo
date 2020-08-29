@@ -304,10 +304,9 @@ P:first-child {
 }
 
 .section__title {
+  display: table;
   position: relative;
   z-index: 0;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-bottom: 1.25em;
   padding: .25em .75em;
   font-size: 2rem;
@@ -390,9 +389,8 @@ P:first-child {
 }
 
 .recipe__title {
+  display: table;
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 0;
   margin-bottom: 1.5em;
   padding: .25em .75em;
@@ -437,11 +435,9 @@ P:first-child {
 
 .recipe__list-title {
   --grad-color: hsla(190, 100%, 50%, .4);
-
+  display: table;
   margin-block-start: 2.5em;
   margin-block-end: .75em;
-  width: -moz-fit-content;
-  width: fit-content;
   font-weight: bold;
   background: linear-gradient(to top,
     var(--grad-color) 45%, transparent 0
